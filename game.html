@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>האתר הרשמי של השועל הלבן</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: url('https://www.space.gov.il/sites/default/files/stars_at_motion.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
+/* פס עליון */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.85);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 30px #ffdd00,0 0 40px #ffdd00,0 0 50px #fff;
+  animation: glow 2s infinite alternate;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.header img {width:50px;height:50px;border-radius:50%;}
+@keyframes glow{
+  0% {text-shadow:0 0 5px #fff,0 0 10px #fff,0 0 20px #ffdd00;}
+  50% {text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 40px #ffdd00;}
+  100% {text-shadow:0 0 15px #fff,0 0 30px #fff,0 0 50px #ffdd00;}
+}
+/* פס מתחת לראשי */
+.sub-header {
+  margin-top: 80px;
+  background-color: rgba(0,0,0,0.75);
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 6px #fff;
+}
+/* קונטיינר */
+.container {position: relative; top:140px; width:95%; max-width:1100px; margin:0 auto; padding:20px; display:flex; flex-direction:column; align-items:center; z-index:1;}
+/* קישורים לרשתות + חולצה */
+.links {background:rgba(0,0,0,0.7); border-radius:20px; padding:25px; width:100%; box-shadow:0 0 25px #fff; margin-bottom:35px;}
+.links h2 {color:#ffd700; margin-bottom:20px; text-shadow:1px 1px 6px #fff; text-align:center;}
+.link-btn {display:flex; align-items:center; justify-content:center; margin:15px 0; padding:22px; background:linear-gradient(145deg,#fff,#bbb); color:#000; font-weight:bold; font-size:1.4em; border-radius:25px; text-decoration:none; transition:0.3s; box-shadow:0 0 20px #fff,0 0 35px #bbb inset;}
+.link-btn img {width:45px;height:45px;margin-left:15px;}
+.link-btn:hover {transform:scale(1.08); box-shadow:0 0 30px #ffd700,0 0 50px #fff inset;}
+/* עדכונים */
+.updates {background:rgba(0,0,0,0.75); border-radius:25px; padding:25px; width:100%; box-shadow:0 0 25px #fff; margin-bottom:35px;}
+.updates h2 {color:#ffd700; margin-bottom:20px; text-shadow:1px 1px 6px #fff; text-align:center;}
+.feed-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px;}
+.feed-item {position:relative; overflow:hidden; border-radius:15px; cursor:pointer; transition:transform 0.3s, box-shadow 0.3s;}
+.feed-item img {width:100%; height:150px; object-fit:cover; display:block;}
+.feed-item:hover {transform:scale(1.06); box-shadow:0 0 25px #ffd700;}
+.feed-title {position:absolute; bottom:0; background:rgba(0,0,0,0.8); width:100%; color:#fff; font-size:1em; padding:6px; text-align:center;}
+.live-label {position:absolute; top:6px; left:6px; background:red; color:#fff; font-weight:bold; padding:3px 6px; font-size:0.85em; border-radius:4px;}
+/* כפתור פתיחת צ'אט */
+.open-chat-btn {background:#111; color:white; padding:15px 25px; font-size:18px; border:none; border-radius:12px; cursor:pointer; transition:0.3s; margin-bottom:30px;}
+.open-chat-btn:hover {background:#333; transform:scale(1.05);}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://yt3.googleusercontent.com/1ZzHxLyzZfnlrWQY8v1mpzRMTdmDi_kMGglznGNZMT3ZD2tmY_-NTLEfhLsk-sJY-AS2hqBu=s900-c-k-c0x00ffffff-no-rj" alt="לוגו השועל">
+  האתר הרשמי של השועל הלבן
+</div>
+
+<div class="sub-header">
+אז הגעתם לאתר של השועל הלבן כאן תימצאו את כל העדכונים והקישורים לעמוד וגם מי שרוצה שיתוף פעולה.
+</div>
+
+<div class="container">
+
+  <!-- קישורים לרשתות + חולצה -->
+  <div class="links">
+    <h2>קישורים לרשתות חברתיות וחולצה</h2>
+    <a class="link-btn" href="https://www.tiktok.com/@plty818" target="_blank">
+      טיקטוק
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/%D7%98%D7%99%D7%A7%D7%98%D7%95%D7%A7.png" alt="TikTok">
+    </a>
+    <a class="link-btn" href="https://discord.gg/xbBYChvzWB" target="_blank">
+      דיסקורד
+      <img src="https://discordil.wordpress.com/wp-content/uploads/2020/08/cropped-discord-icon.png?w=240" alt="Discord">
+    </a>
+    <a class="link-btn" href="https://youtube.com/channel/UCpHYZFdAG8-mc6wSh1qF10g" target="_blank">
+      יוטיוב
+      <img src="https://www.commbox.io/wp-content/uploads/2023/11/commbox-app-centrer-icons-Youtube-9.png" alt="YouTube">
+    </a>
+    <a class="link-btn" href="https://www.roblox.com/share?code=92d64b2b4bf1d044a5deacfdcad08b0c&type=AvatarItemDetails" target="_blank">
+      👕 חולצה ברובלוקס
+      <img src="https://www.computerhope.com/jargon/r/roblox.png" alt="Roblox">
+    </a>
+  </div>
+
+  <!-- עדכונים -->
+  <div class="updates">
+    <h2>עדכונים מיוטיוב</h2>
+    <div id="feed-list" class="feed-grid"><p>טוען עדכונים…</p></div>
+  </div>
+
+  <!-- כפתור פתיחת צ'אט -->
+  <button class="open-chat-btn" onclick="$crisp.push(['do','chat:open'])">📩 פתיחת צ'אט</button>
+
+</div>
+
+<script>
+// עדכוני יוטיוב
+const feedUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCpHYZFdAG8-mc6wSh1qF10g';
+const proxy = 'https://api.rss2json.com/v1/api.json?rss_url=';
+async function loadFeed(){
+  const list=document.getElementById('feed-list');
+  try{
+    const res=await fetch(proxy+encodeURIComponent(feedUrl));
+    const data=await res.json();
+    list.innerHTML='';
+    data.items.slice(0,6).forEach(item=>{
+      const vid=item.link.split('v=')[1];
+      const th=vid?`https://img.youtube.com/vi/${vid}/hqdefault.jpg`:'https://via.placeholder.com/220x150?text=No+Image';
+      list.innerHTML+=`
+      <div class="feed-item">
+        <a href="${item.link}" target="_blank">
+          <img src="${th}" alt="${item.title}">
+          <div class="feed-title">${item.title}</div>
+        </a>
+      </div>`;
+    });
+  }catch{
+    list.innerHTML='<p>שגיאה בטעינת העדכונים</p>';
+  }
+}
+loadFeed();
+</script>
+
+<!-- צ'אט Crisp -->
+<script type="text/javascript">
+window.$crisp=[];
+window.CRISP_WEBSITE_ID="438be4bb-db18-4d14-a5aa-dc469b7481cd";
+(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+
+</body>
+</html>
